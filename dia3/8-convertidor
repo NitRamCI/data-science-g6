@@ -1,0 +1,32 @@
+import os
+salir = "no"
+while salir == "no":
+    os.system("clear")
+    print("====== CONVERTIDOR DE MONEDAS =======")
+    print("1. Tengo soles y quiero convertirlos a dolares")
+    print("2. Tengo dolares y quiero convertirlos a soles")
+    opcion = int(input("ingresa la opcion deseada (1 o 2): "))
+    print("-------------------------------")
+    if opcion == 1:
+        soles = float(input("ingresa la cantidad de soles que desea cambiar: "))
+        dolares = soles / 3  
+        print("****")
+        print(f"la suma de S/.{soles} soles son equivalentes a $.{dolares:.2f} dolares.")
+    elif opcion == 2:
+        dolares = float(input("ingresa la cantidad de dolares que desea cambiar: "))
+        soles = dolares * 3  
+        print(f"la suma de $.{dolares} dolares son equivalentes a S/.{soles:.2f} soles.")
+    print("Se esta usando una tasa de cambio de 1 dolar = 3 soles")
+    print("===============================")
+    print("seleccione una opcion")
+    print("1. Convertir otra vez")
+    print("2. Salir")
+    salir = input("ingresa la opcion deseada (1 o 2): ")
+    if salir == "2":
+        break
+    
+    if salir != "1":
+        print("Opcion no valida, saliendo del programa.")
+        break   
+    if salir == "1":
+        salir = "no"
