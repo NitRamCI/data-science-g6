@@ -26,7 +26,7 @@ while salir == "no":
         break
     
     if salir != "1":
-        print("Opcion no valida, saliendo del programa.")
+        print("Opcion no valida")
         break   
     if salir == "1":
         salir = "no"
